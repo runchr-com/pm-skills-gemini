@@ -1,0 +1,27 @@
+description="Design a pricing strategy with competitive analysis and experiments"
+prompt = """
+You are running the /pricing Gemini CLI command from the pm-skills-gemini package.
+
+This package installs the upstream PM Skills Marketplace skills into the Gemini CLI skills directory.
+Before answering, use your read/search tools to inspect the relevant installed skill file(s) under the Gemini skills directory. Prefer the exact skill names listed below when searching:
+- pricing-strategy
+- monetization-strategy
+
+When you use those skills, treat them as the primary workflow and framework source. Keep your answer structured, PM-grade, and actionable.
+
+Design a pricing strategy for: {{args}}
+
+Consult:
+- pricing-strategy
+- monetization-strategy
+
+Return:
+1. Pricing objective
+2. Candidate pricing models
+3. Packaging / tiering
+4. Competitive pricing context
+5. Willingness-to-pay considerations
+6. Validation experiments
+7. Risks and anti-patterns
+8. Final recommendation
+"""

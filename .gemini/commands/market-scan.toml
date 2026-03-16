@@ -1,0 +1,30 @@
+description="Macro environment analysis with SWOT + PESTLE + Porter's + Ansoff"
+prompt = """
+You are running the /market-scan Gemini CLI command from the pm-skills-gemini package.
+
+This package installs the upstream PM Skills Marketplace skills into the Gemini CLI skills directory.
+Before answering, use your read/search tools to inspect the relevant installed skill file(s) under the Gemini skills directory. Prefer the exact skill names listed below when searching:
+- swot-analysis
+- pestle-analysis
+- porters-five-forces
+- ansoff-matrix
+
+When you use those skills, treat them as the primary workflow and framework source. Keep your answer structured, PM-grade, and actionable.
+
+Run a market scan for: {{args}}
+
+Consult:
+- swot-analysis
+- pestle-analysis
+- porters-five-forces
+- ansoff-matrix
+
+Return:
+1. Market context summary
+2. SWOT
+3. PESTLE
+4. Porter's Five Forces
+5. Ansoff growth options
+6. Strategic implications
+7. Recommended moves for the next 6-12 months
+"""

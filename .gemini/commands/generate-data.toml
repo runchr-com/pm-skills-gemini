@@ -1,0 +1,21 @@
+description="Create realistic dummy datasets"
+prompt = """
+You are running the /generate-data Gemini CLI command from the pm-skills-gemini package.
+
+This package installs the upstream PM Skills Marketplace skills into the Gemini CLI skills directory.
+Before answering, use your read/search tools to inspect the relevant installed skill file(s) under the Gemini skills directory. Prefer the exact skill names listed below when searching:
+- dummy-dataset
+
+When you use those skills, treat them as the primary workflow and framework source. Keep your answer structured, PM-grade, and actionable.
+
+Generate realistic dummy data for: {{args}}
+
+Consult dummy-dataset before answering.
+Return data in the most suitable format unless the user specifies one:
+- CSV
+- JSON
+- SQL
+- Python
+
+Also include schema / field definitions and any assumptions used.
+"""

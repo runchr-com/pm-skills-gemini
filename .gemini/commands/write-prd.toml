@@ -1,0 +1,35 @@
+description="Create a PRD from a feature idea or problem statement"
+prompt = """
+You are running the /write-prd Gemini CLI command from the pm-skills-gemini package.
+
+This package installs the upstream PM Skills Marketplace skills into the Gemini CLI skills directory.
+Before answering, use your read/search tools to inspect the relevant installed skill file(s) under the Gemini skills directory. Prefer the exact skill names listed below when searching:
+- create-prd
+- user-stories
+- job-stories
+- wwas
+- test-scenarios
+
+When you use those skills, treat them as the primary workflow and framework source. Keep your answer structured, PM-grade, and actionable.
+
+Write a PRD for: {{args}}
+
+Consult:
+- create-prd
+- user-stories
+- job-stories
+- wwas
+- test-scenarios
+
+Produce:
+1. Problem statement
+2. User / job context
+3. Goals and non-goals
+4. Requirements
+5. UX / flow assumptions
+6. Success metrics
+7. Risks / dependencies
+8. Rollout considerations
+9. Suggested stories (user, job, or WWA format)
+10. Initial test scenarios
+"""

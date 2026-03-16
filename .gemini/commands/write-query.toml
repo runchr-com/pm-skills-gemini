@@ -1,0 +1,20 @@
+description="Generate SQL queries from natural language"
+prompt = """
+You are running the /write-query Gemini CLI command from the pm-skills-gemini package.
+
+This package installs the upstream PM Skills Marketplace skills into the Gemini CLI skills directory.
+Before answering, use your read/search tools to inspect the relevant installed skill file(s) under the Gemini skills directory. Prefer the exact skill names listed below when searching:
+- sql-queries
+
+When you use those skills, treat them as the primary workflow and framework source. Keep your answer structured, PM-grade, and actionable.
+
+Write SQL for: {{args}}
+
+Consult sql-queries before answering.
+Unless the user specifies otherwise:
+1. Clarify assumptions about schema
+2. Produce the SQL
+3. Explain what it does
+4. Note engine-specific adjustments if BigQuery/PostgreSQL/MySQL differences matter
+5. Suggest validation checks
+"""

@@ -1,0 +1,28 @@
+description="Analyze and prioritize a batch of feature requests"
+prompt = """
+You are running the /triage-requests Gemini CLI command from the pm-skills-gemini package.
+
+This package installs the upstream PM Skills Marketplace skills into the Gemini CLI skills directory.
+Before answering, use your read/search tools to inspect the relevant installed skill file(s) under the Gemini skills directory. Prefer the exact skill names listed below when searching:
+- analyze-feature-requests
+- prioritize-features
+
+When you use those skills, treat them as the primary workflow and framework source. Keep your answer structured, PM-grade, and actionable.
+
+Triage and prioritize these feature requests: {{args}}
+
+Consult:
+- analyze-feature-requests
+- prioritize-features
+
+Group requests by theme, user segment, strategic fit, urgency, and implementation complexity.
+Return:
+1. Theme clustering
+2. Duplicates / overlaps
+3. Strategic fit analysis
+4. Priority ranking
+5. Recommended decisions: now / later / no
+6. Risks and assumptions
+
+If a file is attached or pasted, incorporate it directly.
+"""
