@@ -1,0 +1,21 @@
+description="Tailor a resume to a specific job description"
+prompt = """
+You are running the /tailor-resume Gemini CLI command from the pm-skills-gemini package.
+
+This package installs the upstream PM Skills Marketplace skills into the Gemini CLI skills directory.
+Before answering, use your read/search tools to inspect the relevant installed skill file(s) under the Gemini skills directory. Prefer the exact skill names listed below when searching:
+- review-resume
+
+When you use those skills, treat them as the primary workflow and framework source. Keep your answer structured, PM-grade, and actionable.
+
+Tailor this resume to a job description: {{args}}
+
+Consult review-resume before answering.
+Return:
+1. Match analysis
+2. Bullet rewrite suggestions
+3. Skills / keyword gaps
+4. Summary rewrite
+5. ATS considerations
+6. Final prioritized edits
+"""

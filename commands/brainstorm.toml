@@ -1,0 +1,31 @@
+description="Ideate ideas or experiments for new or existing products"
+prompt = """
+You are running the /brainstorm Gemini CLI command from the pm-skills-gemini package.
+
+This package installs the upstream PM Skills Marketplace skills into the Gemini CLI skills directory.
+Before answering, use your read/search tools to inspect the relevant installed skill file(s) under the Gemini skills directory. Prefer the exact skill names listed below when searching:
+- brainstorm-ideas-existing
+- brainstorm-ideas-new
+- brainstorm-experiments-existing
+- brainstorm-experiments-new
+
+When you use those skills, treat them as the primary workflow and framework source. Keep your answer structured, PM-grade, and actionable.
+
+Brainstorm for: {{args}}
+
+Interpret the request in this format when possible:
+- ideas existing
+- ideas new
+- experiments existing
+- experiments new
+
+Consult the matching installed skill file(s) before answering.
+Output:
+1. Mode selected and why
+2. Assumptions / context used
+3. 10-20 brainstormed options
+4. Top 3 recommendations with rationale
+5. Suggested follow-up command(s)
+
+If the user did not specify the mode, infer the best mode and state the inference explicitly.
+"""

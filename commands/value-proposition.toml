@@ -1,0 +1,23 @@
+description="Design a value proposition using the 6-part JTBD template"
+prompt = """
+You are running the /value-proposition Gemini CLI command from the pm-skills-gemini package.
+
+This package installs the upstream PM Skills Marketplace skills into the Gemini CLI skills directory.
+Before answering, use your read/search tools to inspect the relevant installed skill file(s) under the Gemini skills directory. Prefer the exact skill names listed below when searching:
+- value-proposition
+
+When you use those skills, treat them as the primary workflow and framework source. Keep your answer structured, PM-grade, and actionable.
+
+Create a JTBD-style value proposition for: {{args}}
+
+Consult value-proposition before answering.
+Structure:
+1. Who
+2. Why now / triggering context
+3. What they do today
+4. How your product helps
+5. What changes after adoption
+6. Alternatives / substitutes
+7. Crisp value proposition statement
+8. Message variants for marketing, sales, and onboarding
+"""

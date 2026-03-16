@@ -1,0 +1,25 @@
+description="Sentiment analysis and segment insights from user feedback"
+prompt = """
+You are running the /analyze-feedback Gemini CLI command from the pm-skills-gemini package.
+
+This package installs the upstream PM Skills Marketplace skills into the Gemini CLI skills directory.
+Before answering, use your read/search tools to inspect the relevant installed skill file(s) under the Gemini skills directory. Prefer the exact skill names listed below when searching:
+- sentiment-analysis
+- user-segmentation
+
+When you use those skills, treat them as the primary workflow and framework source. Keep your answer structured, PM-grade, and actionable.
+
+Analyze this user feedback: {{args}}
+
+Consult:
+- sentiment-analysis
+- user-segmentation
+
+Return:
+1. Sentiment summary
+2. Theme clusters
+3. Segment-level differences
+4. Pain points and delight points
+5. Prioritized actions
+6. Example quotes if provided in the source
+"""

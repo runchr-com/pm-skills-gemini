@@ -1,0 +1,622 @@
+{
+  "upstream_repo": "https://github.com/phuryn/pm-skills",
+  "plugins": [
+    {
+      "plugin": "pm-product-discovery",
+      "skills": [
+        {
+          "name": "brainstorm-ideas-existing",
+          "description": "Multi-perspective ideation for existing products"
+        },
+        {
+          "name": "brainstorm-ideas-new",
+          "description": "Ideation for new products in initial discovery"
+        },
+        {
+          "name": "brainstorm-experiments-existing",
+          "description": "Design experiments to test assumptions for existing products"
+        },
+        {
+          "name": "brainstorm-experiments-new",
+          "description": "Design lean startup pretotypes for new products"
+        },
+        {
+          "name": "identify-assumptions-existing",
+          "description": "Identify risky assumptions across value, usability, viability, and feasibility"
+        },
+        {
+          "name": "identify-assumptions-new",
+          "description": "Identify risky assumptions across eight risk categories"
+        },
+        {
+          "name": "prioritize-assumptions",
+          "description": "Prioritize assumptions using an impact \u00d7 risk matrix"
+        },
+        {
+          "name": "prioritize-features",
+          "description": "Prioritize a feature backlog"
+        },
+        {
+          "name": "analyze-feature-requests",
+          "description": "Analyze and categorize feature requests"
+        },
+        {
+          "name": "opportunity-solution-tree",
+          "description": "Build an Opportunity Solution Tree"
+        },
+        {
+          "name": "interview-script",
+          "description": "Create a structured customer interview script"
+        },
+        {
+          "name": "summarize-interview",
+          "description": "Summarize an interview transcript"
+        },
+        {
+          "name": "metrics-dashboard",
+          "description": "Design a product metrics dashboard"
+        }
+      ],
+      "commands": [
+        {
+          "name": "discover",
+          "description": "Full discovery cycle: ideation \u2192 assumptions \u2192 prioritization \u2192 experiments",
+          "skills": [
+            "brainstorm-ideas-existing",
+            "brainstorm-ideas-new",
+            "identify-assumptions-existing",
+            "identify-assumptions-new",
+            "prioritize-assumptions",
+            "brainstorm-experiments-existing",
+            "brainstorm-experiments-new"
+          ]
+        },
+        {
+          "name": "brainstorm",
+          "description": "Ideate ideas or experiments for new or existing products",
+          "skills": [
+            "brainstorm-ideas-existing",
+            "brainstorm-ideas-new",
+            "brainstorm-experiments-existing",
+            "brainstorm-experiments-new"
+          ]
+        },
+        {
+          "name": "triage-requests",
+          "description": "Analyze and prioritize a batch of feature requests",
+          "skills": [
+            "analyze-feature-requests",
+            "prioritize-features"
+          ]
+        },
+        {
+          "name": "interview",
+          "description": "Prepare an interview script or summarize an interview transcript",
+          "skills": [
+            "interview-script",
+            "summarize-interview"
+          ]
+        },
+        {
+          "name": "setup-metrics",
+          "description": "Design a product metrics dashboard",
+          "skills": [
+            "metrics-dashboard"
+          ]
+        }
+      ]
+    },
+    {
+      "plugin": "pm-product-strategy",
+      "skills": [
+        {
+          "name": "product-strategy",
+          "description": "Comprehensive Product Strategy Canvas"
+        },
+        {
+          "name": "startup-canvas",
+          "description": "Startup Canvas"
+        },
+        {
+          "name": "product-vision",
+          "description": "Craft a product vision"
+        },
+        {
+          "name": "value-proposition",
+          "description": "JTBD value proposition"
+        },
+        {
+          "name": "lean-canvas",
+          "description": "Lean Canvas"
+        },
+        {
+          "name": "business-model",
+          "description": "Business Model Canvas"
+        },
+        {
+          "name": "monetization-strategy",
+          "description": "Monetization strategies and experiments"
+        },
+        {
+          "name": "pricing-strategy",
+          "description": "Pricing models and willingness-to-pay"
+        },
+        {
+          "name": "swot-analysis",
+          "description": "SWOT analysis"
+        },
+        {
+          "name": "pestle-analysis",
+          "description": "PESTLE analysis"
+        },
+        {
+          "name": "porters-five-forces",
+          "description": "Porter's Five Forces"
+        },
+        {
+          "name": "ansoff-matrix",
+          "description": "Ansoff Matrix"
+        }
+      ],
+      "commands": [
+        {
+          "name": "strategy",
+          "description": "Create a complete product strategy canvas",
+          "skills": [
+            "product-strategy",
+            "product-vision",
+            "value-proposition",
+            "business-model",
+            "monetization-strategy"
+          ]
+        },
+        {
+          "name": "business-model",
+          "description": "Explore business models (lean|full|startup|value-prop|all)",
+          "skills": [
+            "lean-canvas",
+            "business-model",
+            "startup-canvas",
+            "value-proposition"
+          ]
+        },
+        {
+          "name": "value-proposition",
+          "description": "Design a value proposition using the 6-part JTBD template",
+          "skills": [
+            "value-proposition"
+          ]
+        },
+        {
+          "name": "market-scan",
+          "description": "Macro environment analysis with SWOT + PESTLE + Porter's + Ansoff",
+          "skills": [
+            "swot-analysis",
+            "pestle-analysis",
+            "porters-five-forces",
+            "ansoff-matrix"
+          ]
+        },
+        {
+          "name": "pricing",
+          "description": "Design a pricing strategy with competitive analysis and experiments",
+          "skills": [
+            "pricing-strategy",
+            "monetization-strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "plugin": "pm-execution",
+      "skills": [
+        {
+          "name": "create-prd",
+          "description": "Comprehensive PRD template"
+        },
+        {
+          "name": "brainstorm-okrs",
+          "description": "Team-level OKRs"
+        },
+        {
+          "name": "outcome-roadmap",
+          "description": "Outcome-focused roadmap"
+        },
+        {
+          "name": "sprint-plan",
+          "description": "Sprint planning"
+        },
+        {
+          "name": "retro",
+          "description": "Sprint retrospective facilitation"
+        },
+        {
+          "name": "release-notes",
+          "description": "User-facing release notes"
+        },
+        {
+          "name": "pre-mortem",
+          "description": "Risk analysis"
+        },
+        {
+          "name": "stakeholder-map",
+          "description": "Stakeholder mapping"
+        },
+        {
+          "name": "summarize-meeting",
+          "description": "Meeting transcript summarization"
+        },
+        {
+          "name": "user-stories",
+          "description": "User stories"
+        },
+        {
+          "name": "job-stories",
+          "description": "Job stories"
+        },
+        {
+          "name": "wwas",
+          "description": "Why-What-Acceptance backlog items"
+        },
+        {
+          "name": "test-scenarios",
+          "description": "Test scenarios"
+        },
+        {
+          "name": "dummy-dataset",
+          "description": "Dummy dataset generation"
+        },
+        {
+          "name": "prioritization-frameworks",
+          "description": "Guide to prioritization frameworks"
+        }
+      ],
+      "commands": [
+        {
+          "name": "write-prd",
+          "description": "Create a PRD from a feature idea or problem statement",
+          "skills": [
+            "create-prd",
+            "user-stories",
+            "job-stories",
+            "wwas",
+            "test-scenarios"
+          ]
+        },
+        {
+          "name": "plan-okrs",
+          "description": "Brainstorm team-level OKRs",
+          "skills": [
+            "brainstorm-okrs"
+          ]
+        },
+        {
+          "name": "transform-roadmap",
+          "description": "Convert a feature-based roadmap into outcome-focused",
+          "skills": [
+            "outcome-roadmap",
+            "prioritization-frameworks"
+          ]
+        },
+        {
+          "name": "sprint",
+          "description": "Sprint lifecycle (plan|retro|release)",
+          "skills": [
+            "sprint-plan",
+            "retro",
+            "release-notes"
+          ]
+        },
+        {
+          "name": "pre-mortem",
+          "description": "Pre-mortem risk analysis on a PRD or launch plan",
+          "skills": [
+            "pre-mortem"
+          ]
+        },
+        {
+          "name": "meeting-notes",
+          "description": "Summarize a meeting transcript into structured notes",
+          "skills": [
+            "summarize-meeting"
+          ]
+        },
+        {
+          "name": "stakeholder-map",
+          "description": "Map stakeholders and create a communication plan",
+          "skills": [
+            "stakeholder-map"
+          ]
+        },
+        {
+          "name": "write-stories",
+          "description": "Break features into backlog items (user|job|wwa)",
+          "skills": [
+            "user-stories",
+            "job-stories",
+            "wwas"
+          ]
+        },
+        {
+          "name": "test-scenarios",
+          "description": "Generate test scenarios from user stories",
+          "skills": [
+            "test-scenarios"
+          ]
+        },
+        {
+          "name": "generate-data",
+          "description": "Create realistic dummy datasets",
+          "skills": [
+            "dummy-dataset"
+          ]
+        }
+      ]
+    },
+    {
+      "plugin": "pm-market-research",
+      "skills": [
+        {
+          "name": "user-personas",
+          "description": "Create refined user personas"
+        },
+        {
+          "name": "market-segments",
+          "description": "Identify customer segments"
+        },
+        {
+          "name": "user-segmentation",
+          "description": "Segment users from feedback data"
+        },
+        {
+          "name": "customer-journey-map",
+          "description": "End-to-end journey map"
+        },
+        {
+          "name": "market-sizing",
+          "description": "TAM, SAM, SOM"
+        },
+        {
+          "name": "competitor-analysis",
+          "description": "Competitor analysis"
+        },
+        {
+          "name": "sentiment-analysis",
+          "description": "Sentiment analysis from feedback"
+        }
+      ],
+      "commands": [
+        {
+          "name": "research-users",
+          "description": "Build personas, segment users, and map the customer journey",
+          "skills": [
+            "user-personas",
+            "market-segments",
+            "user-segmentation",
+            "customer-journey-map"
+          ]
+        },
+        {
+          "name": "competitive-analysis",
+          "description": "Analyze the competitive landscape",
+          "skills": [
+            "competitor-analysis",
+            "market-sizing"
+          ]
+        },
+        {
+          "name": "analyze-feedback",
+          "description": "Sentiment analysis and segment insights from user feedback",
+          "skills": [
+            "sentiment-analysis",
+            "user-segmentation"
+          ]
+        }
+      ]
+    },
+    {
+      "plugin": "pm-data-analytics",
+      "skills": [
+        {
+          "name": "sql-queries",
+          "description": "Generate SQL from natural language"
+        },
+        {
+          "name": "cohort-analysis",
+          "description": "Cohort analysis"
+        },
+        {
+          "name": "ab-test-analysis",
+          "description": "A/B test analysis"
+        }
+      ],
+      "commands": [
+        {
+          "name": "write-query",
+          "description": "Generate SQL queries from natural language",
+          "skills": [
+            "sql-queries"
+          ]
+        },
+        {
+          "name": "analyze-cohorts",
+          "description": "Cohort analysis on user engagement data",
+          "skills": [
+            "cohort-analysis"
+          ]
+        },
+        {
+          "name": "analyze-test",
+          "description": "Analyze A/B test results",
+          "skills": [
+            "ab-test-analysis"
+          ]
+        }
+      ]
+    },
+    {
+      "plugin": "pm-go-to-market",
+      "skills": [
+        {
+          "name": "gtm-strategy",
+          "description": "Full GTM strategy"
+        },
+        {
+          "name": "beachhead-segment",
+          "description": "Identify the first beachhead segment"
+        },
+        {
+          "name": "ideal-customer-profile",
+          "description": "Define ICP"
+        },
+        {
+          "name": "growth-loops",
+          "description": "Design growth loops"
+        },
+        {
+          "name": "gtm-motions",
+          "description": "Evaluate GTM motions"
+        },
+        {
+          "name": "competitive-battlecard",
+          "description": "Sales-ready battlecard"
+        }
+      ],
+      "commands": [
+        {
+          "name": "plan-launch",
+          "description": "Full GTM strategy from beachhead to launch plan",
+          "skills": [
+            "gtm-strategy",
+            "beachhead-segment",
+            "ideal-customer-profile"
+          ]
+        },
+        {
+          "name": "growth-strategy",
+          "description": "Design growth loops and evaluate GTM motions",
+          "skills": [
+            "growth-loops",
+            "gtm-motions",
+            "gtm-strategy"
+          ]
+        },
+        {
+          "name": "battlecard",
+          "description": "Create a competitive battlecard",
+          "skills": [
+            "competitive-battlecard"
+          ]
+        }
+      ]
+    },
+    {
+      "plugin": "pm-marketing-growth",
+      "skills": [
+        {
+          "name": "marketing-ideas",
+          "description": "Creative marketing ideas"
+        },
+        {
+          "name": "positioning-ideas",
+          "description": "Product positioning"
+        },
+        {
+          "name": "value-prop-statements",
+          "description": "Value proposition statements"
+        },
+        {
+          "name": "product-name",
+          "description": "Product naming"
+        },
+        {
+          "name": "north-star-metric",
+          "description": "North Star metric"
+        }
+      ],
+      "commands": [
+        {
+          "name": "market-product",
+          "description": "Brainstorm marketing ideas, positioning, value props, and product names",
+          "skills": [
+            "marketing-ideas",
+            "positioning-ideas",
+            "value-prop-statements",
+            "product-name"
+          ]
+        },
+        {
+          "name": "north-star",
+          "description": "Define your North Star Metric and supporting input metrics",
+          "skills": [
+            "north-star-metric",
+            "metrics-dashboard"
+          ]
+        }
+      ]
+    },
+    {
+      "plugin": "pm-toolkit",
+      "skills": [
+        {
+          "name": "review-resume",
+          "description": "PM resume review"
+        },
+        {
+          "name": "draft-nda",
+          "description": "Draft NDA"
+        },
+        {
+          "name": "privacy-policy",
+          "description": "Draft privacy policy"
+        },
+        {
+          "name": "grammar-check",
+          "description": "Grammar, logic, and flow checking"
+        }
+      ],
+      "commands": [
+        {
+          "name": "review-resume",
+          "description": "Comprehensive PM resume review",
+          "skills": [
+            "review-resume"
+          ]
+        },
+        {
+          "name": "tailor-resume",
+          "description": "Tailor a resume to a specific job description",
+          "skills": [
+            "review-resume"
+          ]
+        },
+        {
+          "name": "draft-nda",
+          "description": "Draft an NDA",
+          "skills": [
+            "draft-nda"
+          ]
+        },
+        {
+          "name": "privacy-policy",
+          "description": "Draft a privacy policy",
+          "skills": [
+            "privacy-policy"
+          ]
+        },
+        {
+          "name": "proofread",
+          "description": "Check grammar, logic, and flow",
+          "skills": [
+            "grammar-check"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "plugins": 8,
+    "skills": 65,
+    "commands": 36
+  }
+}

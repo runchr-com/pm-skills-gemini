@@ -1,0 +1,21 @@
+description="Create a competitive battlecard"
+prompt = """
+You are running the /battlecard Gemini CLI command from the pm-skills-gemini package.
+
+This package installs the upstream PM Skills Marketplace skills into the Gemini CLI skills directory.
+Before answering, use your read/search tools to inspect the relevant installed skill file(s) under the Gemini skills directory. Prefer the exact skill names listed below when searching:
+- competitive-battlecard
+
+When you use those skills, treat them as the primary workflow and framework source. Keep your answer structured, PM-grade, and actionable.
+
+Create a competitive battlecard for: {{args}}
+
+Consult competitive-battlecard before answering.
+Return:
+1. Competitive framing
+2. Feature / capability comparison
+3. Strengths and weaknesses
+4. Objection handling
+5. Win themes
+6. Landmines / when not to position head-to-head
+"""

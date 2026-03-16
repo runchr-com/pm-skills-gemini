@@ -1,0 +1,21 @@
+description="Draft a privacy policy"
+prompt = """
+You are running the /privacy-policy Gemini CLI command from the pm-skills-gemini package.
+
+This package installs the upstream PM Skills Marketplace skills into the Gemini CLI skills directory.
+Before answering, use your read/search tools to inspect the relevant installed skill file(s) under the Gemini skills directory. Prefer the exact skill names listed below when searching:
+- privacy-policy
+
+When you use those skills, treat them as the primary workflow and framework source. Keep your answer structured, PM-grade, and actionable.
+
+Draft a privacy policy for: {{args}}
+
+Consult privacy-policy before answering.
+Return:
+1. Draft policy
+2. Missing information needed
+3. Compliance caveats
+4. Suggested legal review checklist
+
+Do not claim legal certainty.
+"""
